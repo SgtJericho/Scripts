@@ -14,7 +14,7 @@ Date
 .\W11_Install_PrivacySettings.ps1
 .\W11_Install_Features.ps1
 .\W11_Remove_Ads_Settings.bat
-.\W11_Remove_AppxPackage_Debloat.ps1
+.\Install-EmbeddedProductKey.ps1
 .\Clear_Evnt.bat
 
 Date
