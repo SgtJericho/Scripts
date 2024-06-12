@@ -7,7 +7,9 @@ At the OOBE Screen. Press FN Shift F10 → From Admin command prompt type the fo
 
 D:\
 CD D:\HomeLab_Apps_W11
+
 .\RemoteSigned_Wifi.bat
 
 Select Wi-Fi Access Point, if wireless.
+
 .\HomeLab_Apps_W11\W11_OOBE_Phase_I_HomeLab.ps1
