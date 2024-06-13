@@ -4,9 +4,9 @@
 
 # Define download URLs
 # $pcHealthCheckUrl = "https://aka.ms/GetPCHealthCheckApp"
-$pcHealthCheckUrl = "https://download.microsoft.com/download/6/9/5/6952da5f-ecb9-473d-83f7-fb52b88e6fdf/3.9/x64/WindowsPCHealthCheckSetup.msi"
+# $pcHealthCheckUrl = "https://download.microsoft.com/download/6/9/5/6952da5f-ecb9-473d-83f7-fb52b88e6fdf/3.9/x64/WindowsPCHealthCheckSetup.msi"
 # $logitechUnifyingUrl = "https://support.logi.com/hc/en-us/articles/5316378315287-Logitech-Unifying-Software"
-$logitechUnifyingUrl = "https://download01.logi.com/web/ftp/pub/techsupport/unifying/unifying252.exe"
+# $logitechUnifyingUrl = "https://download01.logi.com/web/ftp/pub/techsupport/unifying/unifying252.exe"
 
 # Specify installation paths (modify if needed)
 $downloadsPath = "$env:USERPROFILE\Downloads"
@@ -26,8 +26,8 @@ if (-not (Test-Path -Path $downloadsPath)) {
 
 # Install Windows PC Health Check (if needed)
 # Start-Process -Wait -FilePath "$downloadsPath\WindowsPCHealthCheckSetup.msi" -ArgumentList "/QB /D=$pcHealthCheckInstallPath"
-# Start-Process -Wait -FilePath "$downloadsPath\WindowsPCHealthCheckSetup.msi" "/QB"
-Start-Process -FilePath "WindowsPCHealthCheckSetup.msi" -ArgumentList "/QB" -Wait
+Start-Process -Wait -FilePath "$downloadsPath\WindowsPCHealthCheckSetup.msi" "/QB"
+# Start-Process -FilePath "WindowsPCHealthCheckSetup.msi" -ArgumentList "/QB" -Wait
 
 # Install Logitech Unifying Software (if needed)
 # Start-Process -FilePath "unifying252.exe" -ArgumentList "/S" -Wait

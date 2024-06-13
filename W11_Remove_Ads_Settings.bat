@@ -30,4 +30,3 @@ ECHO Disable Microsoft account-related notifications on the Start Menu
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_AccountNotifications" /t REG_DWORD /d 0 /f
 
 ECHO Registry settings updated successfully!
-PAUSE

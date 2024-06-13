@@ -91,7 +91,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\SQMClient\Windows" /v CEIPEnable /t RE
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarAl /t REG_DWORD /d 0 /f
 
 
-:: 3:54 PM 5/26/2024
+3:54 PM 5/26/2024
 
 :: Privacy - Echo Privacy option 'Let Windows track app launches to improve start and search results' has been disabled.
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v Start_TrackProgs /t REG_DWORD /d 0 /f
@@ -123,6 +123,7 @@ REG ADD "HKCU\Software\Microsoft\Siuf\Rules" /v "NumberOfSIUFInPeriod" /t REG_DW
 :: Privacy - Disable "Activity history" privacy option
 REG ADD "HKLM\Software\Policies\Microsoft\Windows\System" /v "PublishUserActivities" /t REG_DWORD /d 0 /f
 REG ADD "HKLM\Software\Policies\Microsoft\Windows\System" /v "UploadUserActivities" /t REG_DWORD /d 0 /f
+
 
 :: Privacy -  Disable "Allow access to location on this device"
 REG ADD "HKLM\Software\Policies\Microsoft\Windows\LocationAndSensors" /v "DisableLocation" /t REG_DWORD /d 1 /f
